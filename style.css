@@ -1,12 +1,13 @@
 :root {
   --main: rgba(0, 92, 169, 0.9);
+  --orange: #f68712;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
   box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+  font-family: "Didact Gothic", sans-serif !important;
+  text-transform: uppercase;
 }
 
 body {
@@ -21,10 +22,11 @@ header {
 }
 
 header img {
-  width: 300px;
+  width: 500px;
 }
 
 main {
+  padding: 0 1rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -34,8 +36,8 @@ main {
 }
 
 .carousel {
-  margin: 1rem 0 0 0;
-  width: 50%;
+  margin: 0 !important;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,62 +45,90 @@ main {
 
 .social {
   width: 35%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
+  margin: 2rem 0 !important;
 }
 
-.social a {
-  width: 100%;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 0.5rem;
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
+button {
+  width: 100% !important;
+  margin: 0.5rem 0 !important;
+}
+
+h5 {
+  margin-bottom: 1rem !important;
 }
 
 h4 {
   margin: 0 !important;
+  font-weight: bold;
 }
 
 h2 {
-  margin: 0 0 1rem 0;
-  font-size: 2.5rem;
   color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px var(--orange);
+  margin: 1rem 0 0 0 !important;
+}
+
+.products-contact,
+.posts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2rem !important;
+}
+
+.posts {
+  margin: 0 !important;
+}
+
+.products-contact h5 {
+  font-weight: bold;
   padding: 0.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  background-color: aliceblue;
+  border-radius: 50px;
+  color: var(--main);
 }
 
-.social a img {
-  width: 20px;
-  height: 20px;
+.products-contact div {
+  width: 40%;
 }
 
-#whatsapp {
-  background-color: green;
+.posts img {
+  width: 40%;
+  border-radius: 5px;
 }
 
-#instagram {
-  background-image: url("https://i.pinimg.com/736x/48/4c/1f/484c1f1ebc0a194c30930bcdabddca13.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+.products-contact img {
+  width: 100%;
+  border-radius: 5px;
 }
 
-#buy {
-  background-color: orange;
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem !important;
 }
 
-.destak {
-  color: orange;
-  font-weight: bold;
+footer {
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+  margin-top: 2rem !important;
+  background-color: var(--orange);
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+#selo {
+  width: 100px;
+  position: absolute;
+  top: -50px;
+  right: 1rem;
 }
 
 @media (max-width: 1200px) {
@@ -106,17 +136,33 @@ h2 {
     width: 60%;
   }
 
-  .carousel {
-    width: 80%;
+  header img {
+    width: 90%;
+  }
+
+  .products-contact,
+  .posts {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0 !important;
+  }
+
+  .products-contact div {
+    width: 100%;
+    margin-top: 2rem !important;
+  }
+
+  .posts img {
+    width: 100%;
+  }
+
+  .posts img:first-child {
+    margin-bottom: 2rem !important;
   }
 }
 
 @media (max-width: 720px) {
   .social {
     width: 95%;
-  }
-
-  .carousel {
-    width: 98%;
   }
 }

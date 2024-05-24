@@ -10,98 +10,78 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="https://www.caixa.gov.br/PublishingImages/nova-home/icones/x-volume-positiva-54-v2.png"
-      type="image/x-icon"
-    />
     <title>Loteria Real</title>
   </head>
   <body>
     <header>
-      <img src="logo.png" alt="" />
+      <img src="logo lot.png" alt="" />
     </header>
     <main>
-      <h2>
-        O <span class="destak">lugar</span> de ficar
-        <span class="destak">rico</span> é a aqui!
-      </h2>
+      <h2>Adquira seu bolão</h2>
+      <div class="products-contact">
+        <div>
+          <h5>Pelo Portal Caixa</h5>
+          <a
+            href="https://www.loteriasonline.caixa.gov.br/silce-web/?utm_source=site_loterias&utm_medium=aplicativos#/bolao-caixa/quina"
+            ><img src="caixa.png" alt=""
+          /></a>
+        </div>
+        <div>
+          <h5>Pelo WhatsApp</h5>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5589981341927&text=Ol%C3%A1%2C+estou+entrando+em+contato+atrav%C3%A9s+do+%2Asite%2A+da+Loteria+Real%21&type=phone_number&app_absent=0"
+            ><img src="whats.png" alt=""
+          /></a>
+        </div>
+      </div>
       <div class="social">
         <a
-          id="buy"
-          target="_blank"
-          href="https://www.loteriasonline.caixa.gov.br/silce-web/?utm_source=site_loterias&utm_medium=aplicativos#/bolao-caixa/quina"
-          ><img
-            src="https://www.caixa.gov.br/PublishingImages/nova-home/icones/x-volume-positiva-54-v2.png"
-            alt=""
-          />
-          <h4>Comprar <strong>bolão</strong></h4></a
-        >
-
-        <a
-          id="whatsapp"
           target="_blank"
           href="https://api.whatsapp.com/send/?phone=5589981341927&text=Ol%C3%A1%2C+estou+entrando+em+contato+atrav%C3%A9s+do+%2Asite%2A+da+Loteria+Real%21&type=phone_number&app_absent=0"
-          ><img
-            src="https://icons.iconarchive.com/icons/dtafalonso/android-l/256/WhatsApp-icon.png"
-            alt=""
-          />
-          <h4>Fale com um <strong>atendente</strong></h4></a
+          ><button type="button" class="btn btn-primary">
+            <h4>Fale conosco</h4>
+          </button></a
         >
-        <a
-          id="instagram"
-          target="_blank"
-          href="https://www.instagram.com/loteriareal_srn/"
-          ><img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1024px-Instagram-Icon.png"
-            alt=""
-          />
-          <h4>Confira nossas <strong>postagens</strong></h4>
-        </a>
       </div>
-      <div class="carousel">
-        <div
-          id="carouselExampleAutoplaying"
-          class="carousel slide"
-          data-bs-ride="carousel"
+      <div class="posts">
+        <img src="Post Feed Quina de São João.png" alt="" />
+        <img src="Serviços Loteria Real.png" alt="" />
+      </div>
+      <div class="social">
+        <a href="about.html"
+          ><button type="button" class="btn btn-light">
+            <h4 style="color: var(--main)">Sobre a loteria real</h4>
+          </button></a
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="Serviços Loteria Real.png"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="Post Feed Quina de São João.png"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      </div>
+
+      <div>
+        <h4 style="color: #fff">Siga-nos nas redes sociais</h4>
+        <div class="social-links">
+          <a target="_blank" href="https://www.instagram.com/loteriareal_srn/">
+            <button type="button" class="btn btn-primary">
+              <h4>Instagram</h4>
+            </button>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/LoteriaRealSRN">
+            <button type="button" class="btn btn-primary">
+              <h4>Facebook</h4>
+            </button>
+          </a>
         </div>
       </div>
     </main>
+
+    <footer>
+      <p style="font-weight: bold;">LOTERIA REAL</p>
+      <p>Figueredo & Macedo Ltda</p>
+      <p>CNPJ: 02.724.941/0001-01 Cod. Loterico: 16.017932-7</p>
+      <p>Rua Prof. João Menezes, 607, Centro, São Raimundo Nonato-PI</p>
+      <p>CEP: 64770-000  Tel.: (89) 3582-1422/1236</p>
+      <p>Whatsapp: (89) 98134-1927</p>
+
+      <img id="selo" src="selo.png" alt="">
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
