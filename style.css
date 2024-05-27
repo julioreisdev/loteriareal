@@ -10,8 +10,24 @@
   text-transform: uppercase;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 body {
   background-color: var(--main);
+}
+
+button {
+  display: flex !important;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+button img {
+  width: 25px;
+  height: 25px;
 }
 
 header {
@@ -35,6 +51,11 @@ main {
   text-align: center;
 }
 
+#instagram {
+  width: 20px;
+  height: 20px;
+}
+
 .carousel {
   margin: 0 !important;
   width: 100%;
@@ -45,7 +66,7 @@ main {
 
 .social {
   width: 35%;
-  margin: 2rem 0 !important;
+  margin: 1rem 0 0 0 !important;
 }
 
 button {
@@ -60,6 +81,12 @@ h5 {
 h4 {
   margin: 0 !important;
   font-weight: bold;
+}
+
+p {
+  text-align: justify;
+  color: #fff;
+  margin-bottom: 1rem !important;
 }
 
 h2 {
@@ -80,7 +107,7 @@ h2 {
 }
 
 .posts {
-  margin: 0 !important;
+  margin: 1rem !important;
 }
 
 .products-contact h5 {
@@ -91,8 +118,12 @@ h2 {
   color: var(--main);
 }
 
-.products-contact div {
+.products-contact a {
   width: 40%;
+}
+
+.products-contact div {
+  width: 100%;
 }
 
 .posts img {
@@ -109,7 +140,13 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-bottom: 2rem !important;
+}
+
+iframe {
+  width: 100%;
 }
 
 footer {
@@ -147,7 +184,15 @@ footer p {
     margin-top: 0 !important;
   }
 
+  .posts {
+    margin-top: 1rem !important;
+  }
+
   .products-contact div {
+    width: 100%;
+  }
+
+  .products-contact a {
     width: 100%;
     margin-top: 2rem !important;
   }
@@ -164,5 +209,10 @@ footer p {
 @media (max-width: 720px) {
   .social {
     width: 95%;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
   }
 }
